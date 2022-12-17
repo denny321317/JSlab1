@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		var input1;
+		input1 = window.prompt("Please enter your first input:");
+		var input2;
+		input2 = window.prompt("Please enter your second input:");
+
+		if(input1>input2){
+			document.body.style.backgroundColor = "lightblue";
+			document.writeln(input1 + '>' + input2);
+		}
+		else if(input1<input2){
+			document.body.style.backgroundColor = 'lightgreen';
+			document.writeln(input2 + '>' + input1);
+		}
+		else{
+			document.body.style.backgroundColor = 'lightyellow';
+			document.writeln(input2 + '==' + input1);
+		}
+
+	</script>
+
+	<input type="button" value="1st button" onclick="alert(input1)">
+	<input type="button" value="2nd button" onclick="alert(input2)">
+
+</body>
+</html>
